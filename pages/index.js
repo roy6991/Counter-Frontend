@@ -11,11 +11,11 @@ export default function Home() {
 
     async function connect() {
         try {
-            if ('ontouchstart' in window || 'onmsgesturechange' in window) {
-                const dappUrl = process.env.NEXT_PUBLIC_DAPP_URL;
-                const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl;
-                window.open(metamaskAppDeepLink, '_self');
-            }
+            // if ('ontouchstart' in window || 'onmsgesturechange' in window) {
+            //     const dappUrl = process.env.NEXT_PUBLIC_DAPP_URL;
+            //     const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl;
+            //     window.open(metamaskAppDeepLink, '_self');
+            // }
             await activate(injected);
         } catch (ex) {
             console.log(ex);
