@@ -1,6 +1,7 @@
 import counterAbi from '../../abis/counterAbi.json';
 
 const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
+console.log(contractAddress)
 
 export async function getCounter(library) {
     if (!library) return 0;
