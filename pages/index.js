@@ -12,7 +12,7 @@ export default function Home() {
     async function connect() {
         try {
             if ('ontouchstart' in window || 'onmsgesturechange' in window) {
-                const dappUrl = window.location.href;
+                const dappUrl = process.env.NEXT_PUBLIC_DAPP_URL;
                 const metamaskAppDeepLink = "https://metamask.app.link/dapp/" + dappUrl;
                 window.open(metamaskAppDeepLink, '_self');
             }
